@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #225470;
+    z-index: 1;
+    opacity: 0.80;
+
+}
+
+.header-content{
+    z-index: 2;
+}
+
+.header-content h1{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+
+.header-content p{
+    font-size: 1.5rem;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    background: #34B3A0;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.section{
+    padding:20px 0;
+}
+
+table{
+    width:100%;
+}
+
+th{
+    text-align: center;
+    
+}
+
+th, td{
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.section-b{
+    background: #34B3A0;
+    color:#fff;
+}
+
+.sec-text{
+    color:#333;
+    font-size: 15px;
+   
+}
+
+.panel{
+     box-shadow: 10px 10px grey;
+}
+
+.heading-active{
+    background: greenyellow;
+    color:rgb(207, 7, 7);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.heading-start{
+    background: rgb(109, 47, 255);
+    color:rgb(7, 207, 57);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.heading-completed{
+    background: rgb(255, 47, 47);
+    color:rgb(7, 207, 57);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.panel-body{
+    height: 200px;
+}
+
+
+
+.panel-footer{
+    color:#333;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.panel-footer a{
+    
+    text-decoration: none;
+}
+
+
+.section-c{
+    background: #333;
+    color:#fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #34B3A0
+}
+
+
+.social{
+    text-align: center;
+}
+
+.social ul{
+    list-style-type: none;
+    
+    text-align: center;
+    
+}
+
+.social ul li{
+    display: inline;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    
+    
+}
+
+@media(max-width:960px){
+    .container{
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    table{
+        width: 100%;
+        font-size: 8px;
+    }
+}
+
+
