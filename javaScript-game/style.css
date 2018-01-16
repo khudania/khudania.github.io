@@ -1,0 +1,9 @@
+#canvas{
+    margin: 30px;
+    border: 1px solid lightblue;
+    
+}
+
+.ball{
+    display: none;
+}
