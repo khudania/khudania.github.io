@@ -1,9 +1,43 @@
+@charset "utf-8";
+
 #canvas{
     margin: 30px;
     border: 1px solid lightblue;
     
 }
 
+#bgImage{
+    display: none;
+}
+
 .ball{
+    display: none;
+}
+
+
+/* #start{
+    position: absolute;
+    top: 300px;
+    left: 250px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+} */
+
+.btn{
+    position: absolute;
+    left: 250px;
+}
+
+#basicBtn{
+    top: 300px;
+}
+
+#timeBtn{
+    top: 460px;
+}
+
+#tryAgainBtn{
+    top: 300px;
     display: none;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <title>JS Game</title>
 </head>
-<body onload="initialize()">
+
+<body onload="setBgImage()">
     <canvas id="canvas" width="600" height="580"></canvas>
+    <img src="img/background.png" id="bgImage">
     <img src="ball/orange.png" id="orange" class="ball">
     <img src="ball/red.png" id="red" class="ball">
     <img src="ball/blue.png" id="blue" class="ball">
@@ -16,7 +19,14 @@
     <img src="ball/grey.png" id="grey" class="ball">
     <img src="ball/purple.png" id="purple" class="ball">
     <img src="ball/yellow.png" id="yellow" class="ball">
+    <!-- <button type="button" id="start" onclick="initialize()">Start</button>-->
+    <img src="img/btn/basicBtn.png" class="btn" id="basicBtn" onclick="setJS('basicGame.js')">
+    <img src="img/btn/timeBtn.png" class="btn" id="timeBtn" onclick="setJS('timeTrial.js')">
+    <img src="img/btn/tryAgainBtn.png" class="btn" id="tryAgainBtn" onclick="location.href='index.html'">
+    <audio src="sound/sound.wav" id="sound"></audio>
 
     <script src="main.js"></script>
+    <script type="text/javascript" src="common.js"></script>
 </body>
+
 </html>
