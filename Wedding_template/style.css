@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg1, .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.bgimg1{
+    background-image: url('couple1.jpeg');
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    
+    
+}
+
+.bgimg2{
+    background-image: url('img/flowers.jpeg');
+}
+
+
+
+.head{
+    
+    opacity: 0.8;
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    margin-top: -50px;
+    margin-left: -100px;
+    text-align: center;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    
+   
+}
+
+.head h1, .head h2{
+    color: rgb(209, 0, 0);
+    font-weight: bolder;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    line-height: 2;
+}
+
+nav{
+    opacity: 0.6;
+   
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-nav > li {
+    float: none;
+    display: inline-block;
+    padding-left: 10%;
+    
+   
+  }
+
+ a{
+    color: #000 !important;
+    font-weight: bold;
+  }
+
+  #us{
+      background: rgb(255, 227, 227);
+      margin-top: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 10px; 
+  }
+
+  #us > h1{
+      text-align: center;
+        padding-top: 5%;
+      margin-bottom: 2%;
+  }
+
+  .img2{
+   
+     width: 70%;
+     display: block; 
+     margin: 0 auto; 
+  }
+
+  .img2 > p{
+      margin-top: 3%;
+  }
+
+.img2 > .btn{
+    display: block; 
+     margin: 0 auto; 
+     background-color: #000 !important;
+     color: #fff !important;
+     padding: 0 10px;
+     
+}
+
+.flow{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.flow > .bgimg2 > .inv{
+    opacity: 0.8;
+    position: absolute;
+    left: 40%;
+    margin-top: 15%;
+    margin-left: -100px;
+    text-align: center;
+    color: rgb(70, 25, 25);
+    
+}
+
+.flow > .bgimg2 > .inv > h1, .flow > .bgimg2 > .inv > h2{
+    font-weight: bolder !important;
+}
+
+.flow > .bgimg2 > .inv > h1{
+    font-size: 60px;
+    letter-spacing: 3px;
+    word-spacing: 5px
+}
+
+#wedding{
+    background: rgb(255, 227, 227);
+    margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 10px; 
+  
+}
+
+#wedding > h1{
+    text-align: center;
+      padding-top: 5%;
+    margin-bottom: 2%;
+    color: rgb(122, 118, 118);
+}
+
+
+#rsvp{
+    opacity: 0.8;
+    position: absolute;
+    left: 40%;
+    margin-top: 15%;
+    margin-left: -100px;
+    text-align: center;
+    color: rgb(70, 25, 25);
+    margin-bottom: 10%;
+}
+
+#rsvp > .btn{
+    padding: 0 20px;
+}
+
+#home, #us, #wedding, #rsvp{
+    overflow-x: hidden;
+}
+
+.modal-body{
+    text-align: center;
+}
+
+@media(max-width: 640px){
+    #rsvp{
+        margin-bottom: 40%;
+    }
+}
+
+@media(max-width: 550px){
+    #rsvp{
+        margin-bottom: 50%;
+    }
+}
+
+

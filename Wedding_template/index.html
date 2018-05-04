@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Wedding Invitation</title>
+</head>
+<body>
+  <!--Header Area-->
+        <header class="container-fluid bgimg1" id="home">
+            <div class="head">
+                <h1>Jane & Jhon</h1>
+                <h2>Are getting married</h2>
+                <h2><b>17.07.2018</b></h2>
+            </div>
+        </header>
+
+        <!--Navbar-->
+        <div>
+            <nav class="navbar navbar-default navbar-fixed-bottom center">
+                    <div class="container">
+                            <ul class="nav navbar-nav">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#us">Jane & Jhon</a></li>
+                                    <li><a href="#wedding">Wedding</a></li>
+                                    <li><a href="#rsvp">RSVP</a></li>
+                                    
+                                </ul>
+                    </div>
+            </nav>
+        </div>
+
+        <!--About Jhon And Hane-->
+
+        <div class="conatiner" id="us">
+            <h1>Jane & Jhon</h1>
+            <div class="img2">
+                    <img src="img/couple2.jpeg" class="img-responsive" alt="Responsive image">
+                    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</i>
+                          </p><br>
+                    <button type="button" class="btn"><a href="#wedding"><h3 style="color: aliceblue"> Wedding Details</h3> </a></button>
+            </div>
+        </div>
+
+        <!--Background Image-->
+        <div class="container-fluid flow">
+                <div class="container-fluid bgimg2">
+                        <div class="inv">
+                            <h1>You Are Invited</h1>
+                            <h2><br></h2>
+                            <h2><b>Of Course...</b></h2>
+                        </div>
+                    </div>
+        </div>
+
+        <!--Wedding-->
+        <div class="conatiner" id="wedding">
+                <h1>The Wedding</h1>
+                <div class="img2">
+                        <img src="img/location.jpeg" class="img-responsive" alt="Responsive image">
+                        <div class="container row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <h1>When</h1>
+                                <br>
+                                <h4>Wedding Ceremony</h4>
+                                <br>
+                                <h4>Reception</h4>
+                            </div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <h1>Where</h1>
+                                <br>
+                                <h4>Address 1</h4>
+                                <br>
+                                <h4>Address 2</h4>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+
+            <!--RSVP-->
+
+            <div class="container" >
+                <div id="rsvp">
+                <h1>Hope YOU CAN MAKE IT!</h1>
+                <br>
+                <p>Kindly Respond By July, 2018</p>
+                <br>
+                <button data-toggle="modal" data-target="#myModal" type="button" class="btn btn-danger"><h3>RSVP</h3></button>
+            </div>
+            </div>
+
+
+            <!--RSVP Modal-->
+          
+            <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" style="text-align: center">RSVP</h4>
+                        </div>
+                        <div class="modal-body">
+                            <h1>CAN YOU COME?</h1>
+                          <p>We really hope you can make it&hellip;</p>
+                          <br>
+                          <form class="form">
+                          <input type="text" placeholder="Your Name(s)" style="width: 80%;">
+                        </form>
+                        <br>
+                        <p><i>Sincerely, John & Jane</i></p>
+                        </div>
+                        <div class="modal-footer">
+                                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                        <div class="btn-group" role="group">
+                                          <button type="button" class="btn btn-default btn-success">Going</button>
+                                        </div>
+                                        <div class="btn-group" role="group">
+                                          <button type="button" class="btn btn-default btn-danger">Can't Come</button>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
+            
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
