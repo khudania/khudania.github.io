@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+    <title>Filterable List</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center-align">
+            Filterable List
+        </h1>
+        <input type="text" id="filterInput" placeholder="Search Names...">
+        <ul class="collection with-header" id="names">
+            <li class="collection-header">
+                <h5>A</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Abe</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Abby</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Ajay</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Akash</a>
+            </li>
+
+            <li class="collection-header">
+                <h5>B</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Bonny</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Bikas</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Binay</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Brad</a>
+            </li>
+
+            <li class="collection-header">
+                <h5>C</h5>
+            </li>
+            <li class="collection-item">
+                <a href="#">Chris</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Chetan</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Carrie</a>
+            </li>
+            <li class="collection-item">
+                <a href="#">Cathy</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        //Get Input Element
+        let filterInput = document.getElementById('filterInput');
+
+        //Add Event Listener
+        filterInput.addEventListener('keyup', filterNames);
+
+        function filterNames(){
+            //Get Value of Inputs
+            let filterValue = document.getElementById('filterInput').value.toUpperCase();
+
+            //Get Names Ul
+            let ul = document.getElementById('names');
+
+            //Get lis from ul
+
+            let li = ul.querySelectorAll('li.collection-item');
+
+            //Loop through collection-item li's
+
+            for(let i=0; i<li.length; i++){
+                let a = li[i].getElementsByTagName('a')[0];
+
+                //If matched
+
+                if(a.innerHTML.toUpperCase().indexOf(filterValue) > -1){
+                    li[i].style.display = '';
+                }else{
+                    li[i].style.display = 'none';
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
